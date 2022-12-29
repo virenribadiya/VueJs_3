@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Vue Instance</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{message || "Hello World"}}</h1>
+        <img :src="img" alt="" style="height: 200px; width: 300px;"><br>
+        <h1>{{counter}}</h1>
+        <button v-on:click="increamentCounter">counter++</button> <br><br>
+        <div v-on:mouseover="mouseOver" style="height: 200px; width: 200px; background-color: brown;"></div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+</html>
